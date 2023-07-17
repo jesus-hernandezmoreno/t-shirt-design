@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** Joystix **/
+@font-face {
+  font-family: 'Joystix';
+  src: url('/fonts/joystix/joystix monospace.eot');
+  src: local('☺'), url('/fonts/joystix/joystix monospace.woff') format('woff'),
+    url('/fonts/joystix/joystix monospace.ttf') format('truetype'),
+    url('/fonts/joystix/joystix monospace.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** SF Pixelate **/
+@font-face {
+  font-family: 'SF Pixelate';
+  src: url('/fonts/sf_pixelate/sf_pixelate.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type='file'] {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+.sketch-picker {
+  width: 170px !important;
+  background: #18212a !important;
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
+  border-radius: 6px !important;
+}
+
+.sketch-picker > div:nth-child(3) {
+  display: none !important;
+}
